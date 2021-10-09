@@ -1,0 +1,7 @@
+{
+  "name": "project-name",
+  "version": "1.0.0",
+  "description": "Node with typescript template",
+  "author": "Antonio Vitor <antoniovitorFBN@gmail.com>",
+  "license": "MIT"
+}
