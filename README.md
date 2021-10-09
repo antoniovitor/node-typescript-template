@@ -47,3 +47,17 @@ After installing create nodemon.json config file and the scripts for start and
 build the project.
 
 Also, add ./dist folder to .gitignore file.
+
+## Jest
+
+Install jest, ts-jest and jest types. After the installation, run ts-jest
+initialization command.
+
+```console
+yarn add -D jest ts-jest @types/jest
+yarn ts-jest config:init
+```
+
+Also, setup a new tsconfig.build.json witch will exclude **/*.test.ts files
+from the compilation. After that, add `--porject tsconfig.build.json` to the
+build script.
