@@ -61,3 +61,53 @@ yarn ts-jest config:init
 Also, setup a new tsconfig.build.json witch will exclude **/*.test.ts files
 from the compilation. After that, add `--porject tsconfig.build.json` to the
 build script.
+
+## Eslint and prettier
+
+Install eslint and run the initialization command.
+
+```console
+yarn add -D eslint
+yarn eslint --init
+```
+
+Choose between a standard eslint configuration or answer some questions about
+the code style you prefer. 
+
+Install the dependencies with NPM, delete package-lock file and run yarn
+installation.
+
+```console
+yarn
+```
+
+Install prettier and prettier's eslint extensions and add
+`plugin:prettier/recommended` to the end of extends property in .eslint.json
+file (Check if this is still the recommendation in de [docs](https://github.com/prettier/eslint-plugin-prettier)).
+
+```console
+yarn add -D prettier eslint-config-prettier eslint-plugin-prettier
+```
+
+Create a file called .prettierrc.json and insert some prettier [options](https://prettier.io/docs/en/options.html) like this example.
+
+```json
+{
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "semi": false,
+    "singleQuote": true
+}
+```
+
+Also, enable jest globals variables in .eslintrc.json
+
+```json
+{
+    "env": {
+        ...
+        "jest": true
+    },
+    ...
+}
+```
