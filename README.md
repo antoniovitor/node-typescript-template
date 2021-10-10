@@ -89,7 +89,7 @@ file (Check if this is still the recommendation in de [docs](https://github.com/
 yarn add -D prettier eslint-config-prettier eslint-plugin-prettier
 ```
 
-Create a file called .prettierrc.json and insert some prettier [options](https://prettier.io/docs/en/options.html) like this example.
+Create a file called `.prettierrc.json` and insert some prettier [options](https://prettier.io/docs/en/options.html) like this example.
 
 ```json
 {
@@ -100,7 +100,7 @@ Create a file called .prettierrc.json and insert some prettier [options](https:/
 }
 ```
 
-Also, enable jest globals variables in .eslintrc.json
+Also, enable jest globals variables in `.eslintrc.json`
 
 ```json
 {
@@ -111,3 +111,22 @@ Also, enable jest globals variables in .eslintrc.json
     ...
 }
 ```
+
+## Environment variables
+
+Install dotenv package
+
+```console
+yarn add -D dotenv
+```
+
+After installation, create bootstrap workflow as in `src/boostrap` folder.
+Also, create `env(variable: string)` function as in `src/utils/env`.
+
+# Checklist
+- [ ] Adds Dockerfile
+- [ ] Setup dependabot to supervise dependency versioning
+- [ ] Setup static code analysis
+- [ ] Create deployment pipeline
+- [ ] Adds docker file
+- [ ] (Maybe) add `config/env.ts` file with default env variable values
