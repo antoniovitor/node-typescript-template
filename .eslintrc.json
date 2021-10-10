@@ -16,6 +16,10 @@
     "plugins": [
         "@typescript-eslint"
     ],
+    "ignorePatterns": [
+        "/dist/**/*",
+        "/coverage/**/*"
+    ],
     "rules": {
     }
 }
