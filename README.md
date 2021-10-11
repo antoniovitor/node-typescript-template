@@ -34,17 +34,14 @@ Add ./node_modules folder to .gitignore file.
 
 ## Typescript
 
-Install typescript, sucrase and nodemon.
-
-Sucrase will transpiler typescript and run your code while nodemon will restart
-in cae of errors and live refresh your project after any change.
+Install typescript and ts-node-dev
 
 ```console
-yarn add -D typescript sucrase nodemon
+yarn add -D typescript ts-node-dev
 ```
 
-After installing create nodemon.json config file and the scripts for start and
-build the project.
+After installing, create `yarn start` and `yarn build` command as is in
+`package.json`.
 
 Also, add ./dist folder to .gitignore file.
 
